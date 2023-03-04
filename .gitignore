@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+/ShopOnline.Web/bin/**
+/ShopOnline.Web/obj/**
+/ShopOnline.Api/bin/**
+/ShopOnline.Api/obj/**
+/ShopOnline.Models/bin/**
+/ShopOnline.Models/obj/**
+/.vs/ShopOnlineSolution/FileContentIndex
+/.vs/ShopOnlineSolution/v17/.suo
+/.vs/ShopOnlineSolution/DesignTimeBuild/.dtbcache.v2
+/.vs/ProjectEvaluation
+/.vs/ShopOnlineSolution/v17

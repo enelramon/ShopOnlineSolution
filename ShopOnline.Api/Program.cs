@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 
 //***IMPORTANT INSTRUCTION HERE - MUST CONFIGURE CONNECTION BEFORE RUNNING MIGRATIONS
 builder.Services.AddDbContextPool<ShopOnlineDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ShopOnlineConnection"))
+    options.UseSqlite(builder.Configuration.GetConnectionString("ShopOnlineConnection"))
 );
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
@@ -31,7 +31,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(policy =>
-    policy.WithOrigins("http://localhost:7060", "https://localhost:7060")
+    policy.WithOrigins("http://localhost:7213", "https://localhost:7213")
     .AllowAnyMethod()
     .WithHeaders(HeaderNames.ContentType)
 );
